@@ -1,6 +1,6 @@
 # Mini-BIProject1-Jan-2025 MasterSchool 
 
-Overview: 
+Overview:
 This repository contains the complete design and implementation process for a database solution tailored for Market Flash, a social media marketing company specializing in advertising campaigns, influencer management, and performance analytics. The database was designed to optimize and streamline their data management processes, addressing the relationships between advertisers (clients), social media platforms, influencers, and marketing campaigns.
 
 Deliverables Included:
