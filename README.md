@@ -13,7 +13,7 @@ A Crow’s Foot ERD representing the conceptual design of the database. This inc
 2. Normalized Functional ER Diagram
 A normalized version of the database design, with detailed specifications for entities, attributes, data types, constraints, and relationships (primary and foreign keys).
 
-3. Database Creation and Testing Code
+4. Database Creation and Testing Code
 SQL scripts for:
 - Creating the database schema with all tables and constraints.
 - Inserting sample data (at least 5 entries per table).
