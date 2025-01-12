@@ -1,19 +1,19 @@
 # Mini-BIProject1-Jan-2025 MasterSchool 
 
-Overview:
+## Overview:
 This repository contains the complete design and implementation process for a database solution tailored for Market Flash, a social media marketing company specializing in advertising campaigns, influencer management, and performance analytics. The database was designed to optimize and streamline their data management processes, addressing the relationships between advertisers (clients), social media platforms, influencers, and marketing campaigns.
 
 Deliverables Included:
-1. Entity Relationship Diagram (ERD)
+# 1. Entity Relationship Diagram (ERD) -
 A Crow’s Foot ERD representing the conceptual design of the database. This included:
 - Outlining the relationships between key entities as provided.
 - Creating new entities where required to improve relationship efficiency.
 - Defining the cardinality and participation constraints between each entity.
 
-2. Normalized Functional ER Diagram
+# 2. Normalized Functional ER Diagram
 A normalized version of the database design, with detailed specifications for entities, attributes, data types, constraints, and relationships (primary and foreign keys).
 
-4. Database Creation and Testing Code
+# 3. Database Creation and Testing Code
 SQL scripts for:
 - Creating the database schema with all tables and constraints.
 - Inserting sample data (at least 5 entries per table).
