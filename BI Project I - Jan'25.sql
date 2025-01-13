@@ -5,7 +5,7 @@ CREATE TABLE [Clients] (
   [Phone] VARCHAR(20),
   [Industry] VARCHAR(50),
   [Contact_Start_Date] DATETIME,
-  [Contact_End_Date] DATETIME
+  [Contact_End_Date] DATETIME 
 );
 INSERT INTO Clients (Client_ID, Client_Name, Email, Phone, Industry, Contact_Start_Date, Contact_End_Date)
 VALUES
