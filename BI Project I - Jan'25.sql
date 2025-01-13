@@ -313,3 +313,42 @@ ALTER TABLE [Content_Category] ADD FOREIGN KEY ([Content_ID]) REFERENCES [Conten
 
 ALTER TABLE [Employee_Department] ADD FOREIGN KEY ([Department]) REFERENCES [Employees] ([Department])
 
+--JOIN Statements for Testing 
+--1. Get Campaign Details with Client Information
+SELECT c.Campaign_Name, c.Start_Date, c.Budget, cl.Client_Name
+FROM Campaigns c
+JOIN Clients cl ON c.Client_ID = cl.Client_ID;
+
+--2. Get Employee details for each Campaign
+SELECT e.Employee_Name, e.Role, c.Campaign_Name
+FROM Campaigns_Employees ce
+JOIN Employees e ON ce.Employee_ID = e.Employee_ID
+JOIN Campaigns c ON ce.Campaign_ID = c.Campaign_ID;
+
+--3. Get Ad details with Platform and Campaign information
+SELECT a.Ad_Name, a.Type, p.Platform_Name, c.Campaign_Name
+FROM Advertisements a
+JOIN Platforms p ON a.Platform_ID = p.Platform_ID
+JOIN Campaigns c ON a.Campaign_ID = c.Campaign_ID;
+
+--4. Get Campaign Performance metrics
+SELECT 
+    c.Campaign_Name, 
+    CASE 
+        WHEN m.Metric_ID = '1' THEN m.Impressions
+        WHEN m.Metric_ID = '2' THEN m.Clicks
+        WHEN m.Metric_ID = '3' THEN m.Engagement
+        WHEN m.Metric_ID = '4' THEN m.Conversion_Rate
+        ELSE NULL 
+    END AS Metric_Value
+FROM 
+    Campaigns c
+JOIN 
+    Campaign_Performance cp ON c.Campaign_ID = cp.Campaign_ID
+JOIN 
+    Metrics m ON cp.Metric_ID = m.Metric_ID;
+
+--5. Get Campaign Expenditure details
+SELECT c.Campaign_Name, e.Expenditure_Category, e.Amount
+FROM Campaigns c
+JOIN Campaign_Expenditure e ON c.Campaign_ID = e.Campaign_ID;
