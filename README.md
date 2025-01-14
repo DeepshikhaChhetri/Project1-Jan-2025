@@ -21,5 +21,6 @@ SQL scripts for:
 
 ## 4. Video Presentation
 A detailed walkthrough covering all aspects of the project, from the ERD design and normalization process to the functional database and testing code.
+Video Presentation Link: https://www.loom.com/share/084494b575bd4f3d90d50064f3e3594e?sid=6487fddb-bd5d-47bd-8431-c8848e7d539e
 
 This repository demonstrates the end-to-end process of professional database design, from conceptualization to implementation. It provides a structured approach for building an efficient, normalized database system, which can serve as a reference for similar projects.
